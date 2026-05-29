@@ -1,0 +1,27 @@
+﻿<Page x:Class="bank.PinPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:bank"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="PinPage">
+
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="Введите ПИН" FontSize="24"  Margin="0,20"></TextBlock>
+
+            <Border Background="Wheat" CornerRadius="5" Width="280" Height="50" Margin="0,10">
+                <PasswordBox x:Name="pinBox" FontSize="28" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="0" MaxLength="4"/>
+            </Border>
+
+            <UniformGrid Rows="4" Columns="3" Width="280" Margin="0,20">
+                
+            </UniformGrid>
+
+            <Button Content="Подтвердить" Width="180" Height="35" FontSize="13" Click="ButAP_Click"/>
+            <Button Content="Отмена" Width="180" Height="35" FontSize="13" Click="ButCP_Click"/>
+        </StackPanel> 
+    </Grid>
+</Page>
